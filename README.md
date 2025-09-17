@@ -15,5 +15,8 @@ Airline reviews can be posted on travel websites, apps, forums, or social media,
 
 # Objectives
 - Use python libraries to scrape airline reviews from https://www.airlinequality.com/airline-reviews/air-france.
-- Extract Reviews and sentiments customers from airline quality
+- Extract Reviews and sentiments customers from airline quality.
+- Perform Sentiment Anaysis.
+- Perfrom Topic Modeling.
 - Display them using wordCloud.
+- Distribute Sentiments/Ratings as positive/negatives Using Normal Distibution.
