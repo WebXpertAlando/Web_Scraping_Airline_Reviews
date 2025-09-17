@@ -15,8 +15,30 @@ Airline reviews can be posted on travel websites, apps, forums, or social media,
 
 # Objectives
 - Use python libraries to scrape airline reviews from https://www.airlinequality.com/airline-reviews/air-france.
-- Extract Reviews and sentiments customers from airline quality.
-- Perform Sentiment Anaysis.
+- Extract Reviews and sentiments by customers from airline quality
+- Perform data cleaning by removing any unwanted texts.
+- Categorize Sentiment Anaysis into positive, negative and neutral.
 - Perfrom Topic Modeling.
 - Display them using wordCloud.
 - Distribute Sentiments/Ratings as positive/negatives Using Normal Distibution.
+
+# Python Implementation of web scraping airline Reviews
+## Libaries Used:
+- Pandas
+- Seaborn
+- Matplotlib
+- selenium
+- Beautiful Soup
+- nltk
+- Scikitlean
+- Textblob
+- tqdm
+
+# Sentiment Analysis
+### Perform sentiment Analysis
+`def get_sentiment(text):
+    analysis = TextBlob(text)
+    return analysis.sentiment.polarity
+
+df['Sentiment'] = df['Cleaned_Review'].apply(get_sentiment)`
+`
