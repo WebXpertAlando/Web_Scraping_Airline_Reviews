@@ -34,8 +34,7 @@ Airline reviews can be posted on travel websites, apps, forums, or social media,
 - Textblob
 - tqdm
 
-# Sentiment Analysis
-### Perform sentiment Analysis
+# Perform Sentiment Analysis
 ```Python
 def get_sentiment(text):
     analysis = TextBlob(text)
@@ -43,12 +42,12 @@ def get_sentiment(text):
 df['Sentiment'] = df['Cleaned_Review'].apply(get_sentiment)
 ```
 
-### Categorize sentiment into Positive Neutral Negative
+# Categorize sentiment into Positive Neutral Negative
 ```Python
 df['Sentiment_Category'] = df['Sentiment'].apply(lambda x: 'Positive' if x > 0 else ('Negative' if x < 0 else 'Neutral'))
 ```
 
-### Perform Topic Modeling
+# Perform Topic Modeling
 Technique used to automatically discover hidden themes or topics within a large collection of text documents.
 Instead of reading each document one by one, topic modeling helps identify what the documents are about by grouping frequently co-occurring words into clusters (topics).
 ``` Python
