@@ -42,7 +42,8 @@ def get_sentiment(text):
     return analysis.sentiment.polarity
 df['Sentiment'] = df['Cleaned_Review'].apply(get_sentiment)
 
-### Categorize sentiment into Positive, Neutral, Negative
+
+### Categorize sentiment into Positive Neutral Negative
 ```
 df['Sentiment_Category'] = df['Sentiment'].apply(lambda x: 'Positive' if x > 0 else ('Negative' if x < 0 else 'Neutral'))
 
