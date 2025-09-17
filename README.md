@@ -19,7 +19,7 @@ Airline reviews can be posted on travel websites, apps, forums, or social media,
 - Extract Reviews and sentiments by customers from airline quality
 - Categorize Sentiment Anaysis into positive, negative and neutral.
 - Perform Topic Modeling.
-- Display them using wordCloud.
+- Display Topics Using WordCloud.
 - Distribute Sentiments/Ratings as positive/negatives Using Normal Distibution.
 
 # Python Implementation of web scraping airline Reviews
