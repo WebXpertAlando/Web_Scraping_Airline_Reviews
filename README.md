@@ -12,3 +12,8 @@ An airline review is a written or recorded evaluation shared by passengers about
 - Value for Money – whether the experience matched the price paid.
 
 Airline reviews can be posted on travel websites, apps, forums, or social media, and they help future travelers make informed decisions. Airlines themselves also use reviews to improve service quality and customer satisfaction.
+
+# Objectives
+- Use python libraries to scrape airline reviews from https://www.airlinequality.com/airline-reviews/air-france.
+- Extract Reviews and sentiments customers from airline quality
+- Display them using wordCloud.
