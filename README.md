@@ -22,7 +22,7 @@ Airline reviews can be posted on travel websites, apps, forums, or social media,
 - Display Topics Using WordCloud.
 - Distribute Sentiments/Ratings as positive/negatives Using Normal Distibution.
 
-# Python Implementation of web scraping airline Reviews
+# Python Implementation of Web Scraping Airline Reviews
 ## Libaries Used:
 - Pandas
 - Seaborn
