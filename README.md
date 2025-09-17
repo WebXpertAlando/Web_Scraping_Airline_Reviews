@@ -36,8 +36,8 @@ Airline reviews can be posted on travel websites, apps, forums, or social media,
 
 # Sentiment Analysis
 ### Perform sentiment Analysis
-`def get_sentiment(text):`
-    `analysis = TextBlob(text)`
-    `return analysis.sentiment.polarity`
-`df['Sentiment'] = df['Cleaned_Review'].apply(get_sentiment)`
+```def get_sentiment(text):
+    analysis = TextBlob(text)
+    return analysis.sentiment.polarity
+df['Sentiment'] = df['Cleaned_Review'].apply(get_sentiment)```
 
