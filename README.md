@@ -129,4 +129,5 @@ plt.show()
 ```
 #### Output
 <img width="862" height="487" alt="Screenshot at 2025-09-18 12-13-20" src="https://github.com/user-attachments/assets/a9d4569b-a135-42cb-ab9e-1ca7ff865928" />
-The boxplots shows how positive ratings are high as compared to negative and neutral. 
+
+The boxplots shows how positive ratings by sentiments are high as compared to negative and neutral. 
