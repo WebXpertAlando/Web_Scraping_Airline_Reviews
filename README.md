@@ -20,19 +20,20 @@ Airline reviews can be posted on travel websites, apps, forums, or social media,
 - Categorize Sentiment Anaysis into positive, negative and neutral.
 - Perform Topic Modeling.
 - Display Topics Using WordCloud.
-- Distribute Sentiments/Ratings as positive/negatives Using Normal Distibution.
+- Visualize Sentiments Using Normal Distibution.
+- Visualize Ratings Using Boxplots.
 
 # Python Implementation of Web Scraping Airline Reviews
 ## Libaries Used:
-- Pandas
-- Seaborn
-- Matplotlib
-- selenium
-- Beautiful Soup
-- nltk
-- Scikitlean
-- Textblob
-- tqdm
+- Pandas.
+- Seaborn.
+- Matplotlib.
+- selenium.
+- Beautiful Soup.
+- nltk.
+- Scikitlean.
+- Textblob.
+- tqdm.
 
 # Perform Sentiment Analysis
 ```Python
@@ -101,7 +102,7 @@ plt.show()
 
 <img width="793" height="397" alt="Screenshot at 2025-09-18 11-17-20" src="https://github.com/user-attachments/assets/3ab4da60-f562-4707-b6a0-7da4a55cbedf" />
 
-# Distribute Sentiments as Positive Negative and Neutral
+# Visualize Sentiments as Positive Negative and Neutral
 ```Python
 # Sentiment Distribution Plot
 plt.figure(figsize=(10, 6))
@@ -117,3 +118,15 @@ plt.show()
 
 As we can see we have visualized the sentiments as positive, negative and neutral. It can be seen that the reviews that have been categorized as postive are high as compared to those of negative reviews. This shows that the airline can still get more customers in the future and get positive sentiments. 
 
+# Visualize Ratings
+```Python
+plt.figure(figsize=(10, 6))
+sns.boxplot(data=df, x='Sentiment_Category', y='Rating', palette='viridis')
+plt.title('Rating Distribution by Sentiment')
+plt.xlabel('Sentiment Category')
+plt.ylabel('Rating')
+plt.show()
+```
+#### Output
+<img width="862" height="487" alt="Screenshot at 2025-09-18 12-13-20" src="https://github.com/user-attachments/assets/a9d4569b-a135-42cb-ab9e-1ca7ff865928" />
+The boxplots shows how positive ratings are high as compared to negative and neutral. 
