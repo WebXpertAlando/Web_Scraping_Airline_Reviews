@@ -101,3 +101,19 @@ plt.show()
 
 <img width="793" height="397" alt="Screenshot at 2025-09-18 11-17-20" src="https://github.com/user-attachments/assets/3ab4da60-f562-4707-b6a0-7da4a55cbedf" />
 
+# Distribute Sentiments as Positive Negative and Neutral
+```Python
+# Sentiment Distribution Plot
+plt.figure(figsize=(10, 6))
+sns.countplot(data=df, x='Sentiment_Category', palette='viridis')
+plt.title('Sentiment Distribution')
+plt.xlabel('Sentiment')
+plt.ylabel('Count')
+plt.show()
+```
+
+#### Output
+<img width="846" height="475" alt="Screenshot at 2025-09-18 11-53-48" src="https://github.com/user-attachments/assets/e5362759-8ac3-41ae-830c-43aa1a64f271" />
+
+As we can see we have visualized the sentiments as positive, negative and neutral. It can be seen that the reviews that have been categorized as postive are high as compared to those of negative reviews. This shows that the airline can still get more customers in the future and get positive sentiments. 
+
