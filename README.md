@@ -79,4 +79,15 @@ Top 10 words for topic #4:
 ['hour', 'airport', 'luggage', 'time', 'hours', 'service', 'paris', 'france', 'air', 'flight']
 ```
 
+# Display Topics Using WordCloud
+A wordcloud is a visual representation of text data where:
+- Words appear larger or bolder based on how frequently they occur in the text.
+- It’s often used to quickly identify key themes or topics in reviews, surveys, or any large text dataset.
+- Colors and orientations are sometimes varied to make it visually engaging.
+So in this project, we have generated a word cloud from airline reviews, words like “service”, “delay”, “comfortable”, and “crew” might appear bigger depending on how often they’re mentioned.
+
+```Python
+wordcloud = WordCloud(width=800, height=400, background_color='white').generate(' '.join(df['Cleaned_Review']))
+```
+
 
