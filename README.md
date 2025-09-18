@@ -89,5 +89,15 @@ So in this project, we have generated a word cloud from airline reviews, words l
 ```Python
 wordcloud = WordCloud(width=800, height=400, background_color='white').generate(' '.join(df['Cleaned_Review']))
 ```
+### Plot the WordCloud
+```
+#plot the word cloud
+plt.figure(figsize=(10, 6))
+plt.imshow(wordcloud, interpolation='bilinear')
+plt.axis('off')
+plt.show()
+```
+#### Output
 
+<img width="793" height="397" alt="Screenshot at 2025-09-18 11-17-20" src="https://github.com/user-attachments/assets/3ab4da60-f562-4707-b6a0-7da4a55cbedf" />
 
